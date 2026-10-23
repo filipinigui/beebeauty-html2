@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <!-- Versão estática de apresentação: sem PHP e sem banco de dados -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BeeBeauty | Hair, brows and lashes in Buderim</title>
+  <meta name="description" content="BeeBeauty is a Buderim salon for haircuts, colour, keratin, brows, lashes and makeup.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a href="#top" class="brand">
+    <!-- Trocar pelo logo da cliente: <img src="assets/img/logo.svg" alt="BeeBeauty"> -->
+    BeeBeauty
+  </a>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+  <nav class="nav-links">
+    <a href="#services">Services</a>
+    <a href="#results">Results</a>
+    <a href="#team">Team</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+    <a href="#book" class="btn btn-sm">Book online</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO: resultados logo no início (pedido da cliente) -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Quality you can see, a team you’ll love.</h1>
+      <p>Hair, brows and lashes by qualified stylists in a friendly Buderim salon.</p>
+      <a href="#book" class="btn">Book your appointment</a>
+      <p class="hero-meta">Tue to Sat, 9am to 6pm</p>
+    </div>
+    <div class="ba" data-ba aria-label="Before and after comparison">
+      <div class="ba-img ba-after"><span>Photo: after</span></div>
+      <div class="ba-img ba-before"><span>Photo: before</span></div>
+      <div class="ba-handle" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0"></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <h2>Services</h2>
+    <div class="featured"><a href="#book" class="feat" data-service="Haircut"><strong>Haircut</strong><span>Most requested, from $80</span></a><a href="#book" class="feat" data-service="Brow Design"><strong>Brow Design</strong><span>Most requested, from $45</span></a></div>
+    <div class="menu">
+      <div class="menu-col"><h3>Hair</h3><ul><li><span>Haircut</span><em>from $80</em></li><li><span>Tint</span><em>from $120</em></li><li><span>Highlights</span><em>from $220</em></li><li><span>Balayage</span><em>from $300</em></li><li><span>Brazilian Keratin</span><em>from $250</em></li><li><span>Botox Capilar</span><em>from $180</em></li></ul></div><div class="menu-col"><h3>Brows</h3><ul><li><span>Brow Design</span><em>from $45</em></li><li><span>Brow Lamination</span><em>from $85</em></li><li><span>Microblading</span><em>from $450</em></li></ul></div><div class="menu-col"><h3>Lashes &amp; Makeup</h3><ul><li><span>Lash Lift</span><em>from $95</em></li><li><span>Makeup</span><em>from $110</em></li></ul></div>
+          </ul>
+        </div>
+      
+    </div>
+  </section>
+
+  <!-- GALERIA / ANTES E DEPOIS -->
+  <section id="results" class="section section-alt">
+    <h2>Results</h2>
+    <div class="grid grid-3">
+      <figure class="tile"><div class="ph">Photo</div><figcaption>Balayage</figcaption></figure><figure class="tile"><div class="ph">Photo</div><figcaption>Brow lamination</figcaption></figure><figure class="tile"><div class="ph">Photo</div><figcaption>Haircut</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- EQUIPE -->
+  <section id="team" class="section">
+    <h2>Meet the team</h2>
+    <div class="grid grid-3">
+      <article class="person"><div class="ph ph-round"></div><h3>Team member 1</h3><p>Hair colour specialist</p></article><article class="person"><div class="ph ph-round"></div><h3>Team member 2</h3><p>Brow and lash artist</p></article><article class="person"><div class="ph ph-round"></div><h3>Team member 3</h3><p>Stylist</p></article>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section id="reviews" class="section section-alt">
+    <h2>What clients say</h2>
+    <div class="grid grid-3">
+      <blockquote class="review"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><p>Texto de avaliação 5 estrelas do Google/Instagram.</p><cite>Client name</cite></blockquote><blockquote class="review"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><p>Texto de avaliação 5 estrelas do Google/Instagram.</p><cite>Client name</cite></blockquote><blockquote class="review"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><p>Texto de avaliação 5 estrelas do Google/Instagram.</p><cite>Client name</cite></blockquote>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="about" class="section about">
+    <h2>About BeeBeauty</h2>
+    <p>One year in Buderim, built on qualified professionals and a relaxed, friendly atmosphere. Texto definitivo a ser enviado pela cliente.</p>
+  </section>
+
+  <!-- AGENDAMENTO ONLINE -->
+  <section id="book" class="section section-alt">
+    <h2>Book online</h2>
+    <form id="booking-form" class="form" novalidate>
+      <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true"><!-- anti-spam -->
+      <label>Name<input type="text" name="name" required></label>
+      <label>Phone<input type="tel" name="phone" required></label>
+      <label>Email<input type="email" name="email" required></label>
+      <label>Service
+        <select name="service" required>
+          <option value="">Choose a service</option>
+          <optgroup label="Hair"><option>Haircut</option><option>Tint</option><option>Highlights</option><option>Balayage</option><option>Brazilian Keratin</option><option>Botox Capilar</option></optgroup><optgroup label="Brows"><option>Brow Design</option><option>Brow Lamination</option><option>Microblading</option></optgroup><optgroup label="Lashes &amp; Makeup"><option>Lash Lift</option><option>Makeup</option></optgroup>
+      </select>
+      </label>
+      <label>Preferred date<input type="date" name="date" required></label>
+      <label>Preferred time<input type="time" name="time" min="09:00" max="17:30" step="1800" required></label>
+      <label class="full">Notes<textarea name="notes" rows="3"></textarea></label>
+      <button type="submit" class="btn full">Request appointment</button>
+      <p class="form-msg full" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contact" class="section">
+    <h2>Find us</h2>
+    <div class="contact">
+      <div>
+        <p>1/49 Burnett St, Buderim QLD</p>
+        <p>Tue to Sat, 9am to 6pm</p>
+        <p><a href="tel:+61400000000">+61 400 000 000</a></p>
+        <p><a href="mailto:hello@beebeauty.com.au">hello@beebeauty.com.au</a></p>
+        <p><a href="#">Instagram</a>, <a href="#">Facebook</a></p>
+      </div>
+      <div class="map ph">Google Map (embed depois)</div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© 2026 BeeBeauty. All rights reserved.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
